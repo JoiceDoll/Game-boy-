@@ -1,0 +1,231 @@
+html {
+    background-color: #eaf4db;
+    margin:0px;
+    padding:0px;
+    
+}
+
+body{
+margin:0;
+padding:0;
+width:100%;
+height:0;
+}
+
+.global{
+    padding:0;
+    margin:0;
+}
+
+#container-general {
+    position: absolute;
+    left: 500px;
+    top:10px;
+    width: 350px;
+    height: 550px;
+    margin:0;
+    padding:0;
+
+}
+
+.game-boy {
+    width: 350px;
+    height: 550px;
+    background-color: #59baab;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;
+    border: 2px solid #2f2e33;
+ margin:0;
+ padding:0;
+}
+
+.game-boy:after {
+    content: "";
+    height:100%;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 1px;
+    right: 0px;
+    bottom: 185px;
+    border-left: 4px solid #2f2e3334;
+    border-right: 15px solid #2f2e3334;
+    border-top: 5px solid #2f2e3334;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.game-boy:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 1px;
+    right: 0px;
+    bottom: 800px;
+    border: 2px solid #2f2e33dc;
+
+}
+
+.game-stage {
+    width: 290px;
+    height: 200px;
+    background-color: #55555f;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    border-style: solid;
+    border-color: #2f2e33;
+}
+
+.center{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border-style:solid;
+    border-color: #231f21;
+    bottom:125px;
+    left:30px;
+}
+
+.buttons {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 143px;
+    left: 43px;
+}
+
+#one {
+    position: absolute;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    border-top-color: white;
+    border-left:#231f21;
+    border-right:#231f21;
+    border-bottom:#231f21;
+}
+
+#two {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-top-color: white;
+    border-left:#231f21;
+    border-right:#231f21;
+    border-bottom:#231f21;
+}
+
+#three {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    width: 30px;
+    height: 25px;
+border:#231f21;
+}
+
+#four {
+    position: absolute;
+    bottom: 45px;
+    left: 25px;
+    width: 30px;
+    height: 25px;
+    border-top-color: white;
+    border-left:#231f21;
+    border-right:#231f21;
+    border-bottom:#231f21;
+}
+
+#one,
+#two,
+#three,
+#four {
+    background-color: #231f21;
+    border-radius: 5px;
+}
+
+.second-buttons {
+    border-color: #231f21;
+    border-style: solid;
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    top: 310px;
+    left: 250px;
+    padding:0;
+    margin:0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+   background-color:rgba(173, 173, 173, 0.61);
+    transform: rotate(60deg);
+}
+
+#button-one,
+#button-two {
+    background-color: #fe5945;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid #fff;
+}
+
+#button-one {
+    position: absolute;
+    bottom: 13px;
+    left: 4px;
+}
+
+#button-two {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+}
+
+
+#detail-one{
+    position:relative;
+   width:60px;
+   height:20px;
+   left:105px;
+   bottom:100px;
+   
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: rotate(150deg);
+    background-color:#231f21;
+    border-left: 3px solid #fff;
+}
+
+#detail-two{
+    position:relative;
+   width:60px;
+   height:20px;
+   left:105px;
+   bottom:100px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: rotate(150deg);
+    background-color:#231f21;
+     border-left: 3px solid #fff;
+}
+
+#initial{
+    position:relative;
+    left:550px;
+    top:65px;
+    z-index:1;
+}
+
