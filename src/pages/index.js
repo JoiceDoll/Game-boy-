@@ -11,8 +11,8 @@ window.onload = function () {
   var tp = 10;
   var qp = 18;
   var ax = (ay = 15);
-  var rastro = [];
-  tamanho = 5;
+  var tail = [];
+  size = 5;
 
   function game() {
     px += vx;
@@ -40,24 +40,24 @@ window.onload = function () {
     ctx.fillRect(ax * tp, ay * tp, tp, tp);
 
     ctx.fillStyle = "#252513";
-    for (var i = 0; i < rastro.length; i++) {
-      ctx.fillRect(rastro[i].x * tp, rastro[i].y * tp, tp, tp);
+    for (var i = 0; i < tail.length; i++) {
+      ctx.fillRect(tail[i].x * tp, tail[i].y * tp, tp, tp);
 
       /*GAME OVER*/
-      if (rastro[i].x == px && rastro[i].y == py) {
+      if (tail[i].x == px && tail[i].y == py) {
         vx = vy = 0;
-        tamanho = 5;
+        size = 5;
         ctx.fillRect(0, 0, initial.width, initial.height);
       }
     }
 
-    rastro.push({ x: px, y: py });
-    while (rastro.length > tamanho) {
-      rastro.shift();
+    tail.push({ x: px, y: py });
+    while (tail.length > size) {
+      tail.shift();
     }
 
     if (ax == px && ay == py) {
-      tamanho++;
+      size++;
       ax = Math.floor(Math.random() * qp);
       ay = Math.floor(Math.random() * qp);
     }
