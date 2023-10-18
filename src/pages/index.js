@@ -1,17 +1,17 @@
 window.onload = function () {
-  var initial = document.getElementById("initial");
-  var ctx = initial.getContext("2d");
+  let initial = document.getElementById("initial");
+  let ctx = initial.getContext("2d");
   document.addEventListener("keydown", keyPush);
   setInterval(game, 50);
 
   const vel = 1;
 
-  var vx = (vy = 0);
-  var px = (py = 10);
-  var tp = 10;
-  var qp = 18;
-  var ax = (ay = 15);
-  var tail = [];
+  let vx = (vy = 0);
+  let px = (py = 10);
+  let tp = 10;
+  let qp = 18;
+  let ax = (ay = 15);
+  let tail = [];
   size = 5;
 
   function game() {
@@ -40,7 +40,7 @@ window.onload = function () {
     ctx.fillRect(ax * tp, ay * tp, tp, tp);
 
     ctx.fillStyle = "#252513";
-    for (var i = 0; i < tail.length; i++) {
+    for (let i = 0; i < tail.length; i++) {
       ctx.fillRect(tail[i].x * tp, tail[i].y * tp, tp, tp);
 
       /*GAME OVER*/
