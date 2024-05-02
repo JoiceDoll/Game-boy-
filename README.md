@@ -1,5 +1,5 @@
 # Game-boy-
-Game boy with snake game
+Game boy with a functional snake game
 
 Project created only
 - HTML
